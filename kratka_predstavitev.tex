@@ -1,0 +1,52 @@
+\documentclass[a4paper, pt14]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[slovene]{babel}
+\usepackage{lmodern}
+%\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+\title{%
+  Bottleneck assignment in the plane \\
+  \large projekt pri pri predmetu Finančni praktikum}
+\author{Lea Holc in Eva Rudolf}
+\date{16. \ 12. \ 2022}
+
+\maketitle
+
+\section{Navodilo naloge}
+Naj bosta dani dve množici točk v ravnini $P$ in $Q$. Elementi množice $P$ predstavljajo proizvajalce (\textsl{providers}), elementi množice $Q$ pa porabnike (\textsl{clients}). Tako proizvajalci kot porabniki upravljajo z isto dobrino. Vsak proizvajalec $p \in P$ lahko proizvede $s_p > 0$ dobrine, za vsakega porabnika $q \in Q$ pa definiramo njegovo povpraševanje po dobrini kot $d_q > 0$. Predpostavimo, da je ponudba vseh prozvajalcev enaka povpraševanju vseh porabnikov. Cilj projekta je ugotoviti, ali za podano vrednost $\lambda$ proizvajalci lahko zadostijo potrebam porabnikov in sicer tako, da vsaka dobrina prepotuje pot največ $\lambda$. Ukvarjamo se s problemom maksimalnega pretoka, ki ga želimo predstaviti kot linearni program (LP).
+
+\section{Ideja algoritma}
+Cilj projekta je napisati linearni program, ki minimizira največjo razdaljo, ki jo mora prepotovati dobrina od proizvajalca do porabnika, pri čemer moramo zadostiti vsem potrebam, ki jih imajo porabniki ne da bi presegli kapacitete, ki jih lahko proizvede posamezen proizvajalec. 
+
+Naj bo $p_i$ za $i=1,2,\dots,m$ posamezen proizvajalec in $s_i$ za $i=1,2,\dots,m$ njegova proizvodnja dobrine. Naprej naj bo $q_j$ za $j=1,2,\dots,n$ posamezen porabnik in $d_j$ za $j=1,2,\dots,n$ njegovo povpraševanje po dobrini. Najprej predpostavimo, da velja:
+$$
+\sum_{i=1}^m s_i = \sum_{j=1}^n d_j.
+$$ 
+Označimo: 
+$$
+c_{ij} = 
+\begin{cases}
+    0;\qquad \textrm{i-ti proizvajalec ne oskrbuje j-tega ponudnika} \\
+    1;\qquad \textrm{i-ti proizvajalec oskrbuje j-tega ponudnika} \\
+\end{cases} 
+$$
+in zapišemo pogoje s katerimi zadostimo potrebam posameznega porabnika in zmožnostim posameznega proizvajalca:
+$$
+\sum_{j=1}^n c_{ij} = s_i, \forall i = 1,\dots,m 
+$$
+$$
+\sum_{i=1}^m c_{ij} = d_j, \forall j = 1,\dots,n 
+$$
+Vsakega izmed proizvajalcev $p_i$ in porabnikov $q_j$ predstavimo kot točko v ravnini s koordinatami: $p_i = (x_i,y_i)$ in $q_j = (x_j,y_j)$. Razdaljo med proizvajalcem $p_i$ in porabnikom $q_j$ izračunamo s pomočjo formule $\sqrt{(x_j-x_i)^2 + (y_j-y_i)^2}$. Naš cilj bo poiskati:
+$$
+\min \max_{i,j} \sqrt{(x_j-x_i)^2 + (y_j-y_i)^2}c_{ij}.
+$$
+\section{Delo na projektu}
+Idejo, kako naj bi algoritem deloval sva že dobili. Nekaj dela bodo zahtevali še pogoji, vezani na predpisano razdaljo $\lambda$ in količino dobrin, ki jo posamezen proizvajalec pošlje posameznemu porabniku. Glede na to, da se bova ukvarjali z linearnim programom bova najverjetneje uporabili programski jezik Sage.
+\end{document}
