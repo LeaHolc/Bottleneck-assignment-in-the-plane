@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.22)  11 DEC 2022 17:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.22)  11 DEC 2022 20:20
 entering extended mode
 **c:/Users/Holc/Documents/Lea/FMF/3_letnik/Financni_praktikum/Projekt/kratka_predstavitev.tex
 (c:/Users/Holc/Documents/Lea/FMF/3_letnik/Financni_praktikum/Projekt/kratka_predstavitev.tex
@@ -205,19 +205,19 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 22.
  [1
 
-{C:/Users/Holc/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (c:/Users\Holc\Documents\Lea\FMF\3_letnik\Financni_praktikum\Projekt\kratka_predstavitev.aux) ) 
+{C:/Users/Holc/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] (c:/Users\Holc\Documents\Lea\FMF\3_letnik\Financni_praktikum\Projekt\kratka_predstavitev.aux) ) 
 Here is how much of TeX's memory you used:
- 2696 strings out of 479799
- 37334 string characters out of 2870197
- 315125 words of memory out of 3000000
- 19663 multiletter control sequences out of 15000+200000
- 578168 words of font info for 67 fonts, out of 3000000 for 9000
+ 2703 strings out of 479799
+ 37403 string characters out of 2870197
+ 320125 words of memory out of 3000000
+ 19668 multiletter control sequences out of 15000+200000
+ 584141 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,6n,72p,867b,215s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on c:/Users\Holc\Documents\Lea\FMF\3_letnik\Financni_praktikum\Projekt\kratka_predstavitev.pdf (1 page, 144494 bytes).
+ 65i,9n,72p,867b,215s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/Holc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
+Output written on c:/Users\Holc\Documents\Lea\FMF\3_letnik\Financni_praktikum\Projekt\kratka_predstavitev.pdf (2 pages, 178461 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
+ 56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
