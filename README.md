@@ -1,4 +1,4 @@
-# Bottleneck-assignment-in-the-plane
+# Bottleneck assignment in the plane
 Let P be a set of points in the plane, the providers, and let Q be another set of points in the plane,
 the clients. In general they have different cardinalities. All the providers and clients handle the
 same good. Each provider p ∈ P has a supply available sp > 0 of the good, each client q ∈ Q has a
