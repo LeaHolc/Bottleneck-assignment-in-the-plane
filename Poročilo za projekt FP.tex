@@ -1,0 +1,99 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fancyvrb}
+\setlength\parindent{0pt}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Q}{\mathbb Q}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+\begin{minipage}{0.75\linewidth}
+    \centering
+    {\Large Univerza v Ljubljani \\ Fakulteta za matematiko in fiziko}
+    \\
+    \vspace{7cm}
+
+    {\uppercase{\LARGE \textbf{Bottleneck assignment in the plane}}} \\ Projekt pri predmetu Finančni praktikum \\
+    \vspace{3cm}
+
+    Avtorici:\\
+    {\Large Lea Holc, Eva Rudolf\par}
+    \vspace{7cm}
+
+    {\Large Ljubljana, 2023}
+\end{minipage}
+\end{center}
+
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Navodilo}
+Naj bosta dani dve množici točk v ravnini $P$ in $Q$. Elementi množice $P$ predstavljajo proizvajalce 
+(\textsl{providers}), elementi množice $Q$ pa porabnike (\textsl{clients}). Tako proizvajalci kot porabniki 
+upravljajo z isto dobrino. Vsak proizvajalec $p \in P$ lahko proizvede $s_p > 0$ dobrine, za vsakega porabnika 
+$q \in Q$ pa definiramo njegovo povpraševanje po dobrini kot $d_q > 0$. Predpostavimo, da je ponudba vseh 
+prozvajalcev enaka povpraševanju vseh porabnikov. Cilj projekta je ugotoviti, ali za podano vrednost $\lambda$ 
+proizvajalci lahko zadostijo potrebam porabnikov in sicer tako, da vsaka dobrina prepotuje pot največ $\lambda$. 
+
+\section{Linearen program}
+Ukvarjamo se s problemom maksimalnega pretoka, ki ga želimo predstaviti kot linearni program (LP).
+Cilj je bil napisati linearni program, ki minimizira največjo razdaljo, ki jo mora prepotovati dobrina 
+od proizvajalca do porabnika, pri čemer moramo zadostiti vsem potrebam, ki jih imajo porabniki ne da 
+bi presegli kapacitete, ki jih lahko proizvede posamezen proizvajalec. 
+\subsection{Oznake}
+Najprej uvedemo oznake. Naj bo $p_i$ za $i=1,\dots,m$ posamezen proizvajalec s koordinatami $(x_i,y_i)$ in $s_i$ za $i=1,2,\dots,m$ njegova proizvodnja dobrine. 
+Naprej naj bo $q_j$ za $j=1,2,\dots,n$ posamezen porabnik s koordinatami $(w_j,z_j)$ in $d_j$ za $j=1,2,\dots,n$ njegovo povpraševanje 
+po dobrini. Spomnimo se, da tako proizvajalci kot porabniki upravljajo z isto dobrino in predpostavimo, da velja
+$$
+\sum_{i=1}^m s_i = \sum_{j=1}^n d_j.
+$$ 
+S $c_{ij}$ označimo količino, ki jo proizvajalec $i$ dobavi porabniku $j$. Ker vsi proizvajlci ne 
+dobavljajo vsem porabnikom, uvedemo še indikatorsko spremenljivko $b_{ij}$.
+$$
+b_{ij} = 
+\begin{cases}
+    0;\qquad \textrm{i-ti proizvajalec ne oskrbuje j-tega ponudnika} \\
+    1;\qquad \textrm{i-ti proizvajalec oskrbuje j-tega ponudnika} \\
+\end{cases} 
+$$
+Z $\lambda$ označimo maksimalno razdaljo, ki jo lahko prepotuje posamezna dobrina. To razdaljo 
+želimo minimizirati.
+\subsection{Pogoji}
+Zapišimo še pogoje, s katerimi zadostimo potrebam posameznega porabnika in zmožnostim posameznega 
+proizvajalca:
+$$
+\sum_{j=1}^n c_{ij} = s_i \text{za} \forall i = 1,\dots,m 
+$$
+$$
+\sum_{i=1}^m c_{ij} = d_j \text{za} \forall j = 1,\dots,n 
+$$
+Za indikatorsko spremenljivko $b_{ij}$ lahko zapišemo $$0 \leq b_{ij} \leq 1 \text{in} b \in \Z.$$
+Veljati mora tudi $b_{ij}=0 \Rightarrow c_{ij}=0$, kar lahko zapišemo kot 
+$$0 \leq c_{ij} \leq c_{ij}\cdot b_{ij}.$$
+Omejimo še $\lambda$:
+$$b_{ij}\cdot \sqrt{(x_i - w_j)^2+(y_i - z_j)^2} \leq \lambda.$$
+
+Naš cilj bo poiskati:
+$$
+\min \max_{i,j} \sqrt{(x_j-x_i)^2 + (y_j-y_i)^2} \cdot c_{ij}.
+$$
+
+\section{Delo na projektu}
+Glede na to, da se ukvarjamo z linearnim programiranjem, sva uporabili programski jezik Sage.
+\end{document}
+
+
+\end{document}
